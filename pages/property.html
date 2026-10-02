@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-bind="titulo">Ficha | Casa &amp; Cielo</title>
+<meta name="description" content="" data-bind="metaDesc">
+<meta name="theme-color" content="#3E2D21">
+<link rel="icon" href="../icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../ccs/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ir al contenido</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <ul class="topbar__list">
+      <li><a href="tel:+576017458800">+57 601 745 8800</a></li>
+      <li><a href="mailto:hola@casacielo.com.co">hola@casacielo.com.co</a></li>
+      <li>Carrera 11 # 93-45, Bogotá</li>
+    </ul>
+    <div class="topbar__social">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5A.5.5 0 0 1 12.5 7H15z"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.5a2 2 0 0 1 4 0V17"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="../idenx.html" aria-label="Casa y Cielo, inicio">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none"><path d="M32 14 L50 30 L50 32 L14 32 L14 30 Z" fill="#E8DCCB"/><rect x="20" y="33" width="24" height="17" fill="#F2EAE0"/><rect x="29" y="39" width="6" height="11" fill="#3E2D21"/><rect x="22" y="36" width="5" height="5" fill="#9C7B5C"/><rect x="37" y="36" width="5" height="5" fill="#9C7B5C"/></svg>
+      </span>
+      <span>
+        <span class="brand__name">Casa &amp; Cielo</span>
+        <span class="brand__tag">Inmobiliaria</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegacion principal">
+      <a class="nav__link" href="../idenx.html">Inicio</a>
+      <a class="nav__link is-active" href="properties.html">Propiedades</a>
+      <a class="nav__link" href="../idenx.html#categorias">Casas</a>
+      <a class="nav__link" href="../idenx.html#categorias">Apartamentos</a>
+      <a class="nav__link" href="../idenx.html#agentes">Agentes</a>
+      <a class="nav__link" href="../idenx.html#contacto">Contacto</a>
+      <a class="btn btn--primary" href="#visita">Agendar visita</a>
+    </nav>
+    <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+576017458800">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span><small>Llamanos</small>+57 601 745 8800</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="#visita">Agendar visita</a>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section section--tight">
+    <div class="container">
+      <nav class="crumbs" aria-label="Miga de pan">
+        <a href="../idenx.html">Inicio</a><span>/</span>
+        <a href="properties.html">Propiedades</a><span>/</span>
+        <a href="properties.html" data-bind="zonaHref" data-bind-text="zona">Zona</a><span>/</span>
+        <span aria-current="page" data-bind="nombre">Ficha</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container detail">
+
+      <!-- ============ CONTENIDO ============ -->
+      <div>
+        <div class="gallery" data-gallery>
+          <div class="gallery__main">
+            <span data-gallery-main data-img="casa-alameda" data-w="1200" data-h="800" data-eager="1"></span>
+            <div class="gallery__badge" data-render="badges"></div>
+            <button class="gallery__nav gallery__nav--prev" type="button" data-gallery-prev aria-label="Foto anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="gallery__nav gallery__nav--next" type="button" data-gallery-next aria-label="Foto siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="gallery__thumbs" data-gallery-thumbs data-render="galeriaThumbs"></div>
+        </div>
+
+        <header class="detail__head">
+          <h1 data-bind="nombre">Ficha</h1>
+          <p class="detail__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10.5c0 5.5-8 11.5-8 11.5S4 16 4 10.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.3" r="2.8"/></svg>
+            <span data-bind="direccion">Direccion</span>
+          </p>
+        </header>
+
+        <ul class="spec-grid" data-render="specs"></ul>
+
+        <div class="tabs" role="tablist" aria-label="Informacion del inmueble">
+          <button class="is-active" type="button" role="tab" aria-selected="true" data-tab="desc">Descripcion</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="car">Caracteristicas</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="ubica">Ubicacion</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="fin">Financiacion</button>
+        </div>
+
+        <div class="tabs__panel prose" data-panel="desc" data-render="desc"></div>
+
+        <div class="tabs__panel prose" data-panel="car" hidden>
+          <ul data-render="carac"></ul>
+        </div>
+
+        <div class="tabs__panel prose" data-panel="ubica" hidden>
+          <p data-bind="ubicaTexto">Ubicacion</p>
+          <div class="map-embed" style="margin-top:1.25rem">
+            <div data-render="mapa"></div>
+          </div>
+        </div>
+
+        <div class="tabs__panel prose" data-panel="fin" hidden>
+          <p>Simulacion orientativa para un prestamo hipotecario del 80% sobre <b data-bind="precio">$ 0</b> a 30 anos, con tasa fija del 10,9% efectivo anual. Cuota mensual estimada: <b>$ <span data-bind="cuota">0</span></b> (capital e intereses), mas la cuota de administracion, el impuesto de propiedad y los seguros.</p>
+          <ul data-render="finLista"></ul>
+        </div>
+      </div>
+
+      <!-- ============ PANEL PRECIO ============ -->
+      <aside>
+        <div class="price-card" id="visita">
+          <p class="price-card__price" data-bind="precio">$ 0</p>
+          <p class="price-card__note"><span data-bind="m2Precio">0</span> COP/m&sup2; &middot; Referencia <span data-bind="ref">CC-0000</span></p>
+
+          <div class="price-card__save">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:18px;height:18px;flex:none"><path d="M12 20.3l-1.4-1.3C5.7 14.5 2 11.1 2 6.9 2 3.9 4.4 1.6 7.4 1.6c1.7 0 3.3.8 4.6 2.3 1.3-1.5 2.9-2.3 4.6-2.3 3 0 5.4 2.3 5.4 5.3 0 4.2-3.7 7.6-8.6 12.1z"/></svg>
+            <span>Guardar en mis busquedas</span>
+            <b data-save-count>0</b>
+          </div>
+
+          <form class="price-card__form" data-visit-form novalidate>
+            <div class="field">
+              <label class="field__label" for="v-name">Nombre *</label>
+              <input class="input" type="text" id="v-name" name="name" placeholder="Ana Garcia" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label class="field__label" for="v-email">Email *</label>
+              <input class="input" type="email" id="v-email" name="email" placeholder="ana@correo.com" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label class="field__label" for="v-phone">Telefono</label>
+              <input class="input" type="tel" id="v-phone" name="phone" placeholder="+57 300 000 0000" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label class="field__label" for="v-date">Dia preferido</label>
+              <input class="input" type="date" id="v-date" name="date">
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Agendar visita</button>
+            <p class="form-note" data-form-status role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="price-card__agent" data-render="agenteFicha"></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ SIMILARES ============ -->
+  <section class="section section--sand">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__text" data-reveal>
+          <span class="eyebrow">Tambien te puede interesar</span>
+          <h2>Propiedades similares</h2>
+        </div>
+        <a class="link-arrow" href="properties.html" data-reveal>
+          Ver todas
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="grid" data-property-grid data-limit="3" data-render="similares"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="../idenx.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 14 L50 30 L50 32 L14 32 L14 30 Z" fill="#E8DCCB"/><rect x="20" y="33" width="24" height="17" fill="#F2EAE0"/><rect x="29" y="39" width="6" height="11" fill="#3E2D21"/><rect x="22" y="36" width="5" height="5" fill="#9C7B5C"/><rect x="37" y="36" width="5" height="5" fill="#9C7B5C"/></svg>
+          </span>
+          <span>
+            <span class="brand__name">Casa &amp; Cielo</span>
+            <span class="brand__tag">Inmobiliaria</span>
+          </span>
+        </a>
+        <p class="footer__about">Agencia inmobiliaria independiente desde 1998. Trabajamos solo con lo que nosotros recomendamos, y por eso la mayoria de nuestros clientes llegan por recomendacion.</p>
+        <div class="footer__social">
+          <a class="icon-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5A.5.5 0 0 1 12.5 7H15z"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.5a2 2 0 0 1 4 0V17"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegacion</h4>
+        <nav class="footer__links">
+          <a href="../idenx.html">Inicio</a>
+          <a href="properties.html">Todas las propiedades</a>
+          <a href="../idenx.html#categorias">Casas</a>
+          <a href="../idenx.html#categorias">Apartamentos</a>
+          <a href="../idenx.html#agentes">Nuestro equipo</a>
+          <a href="../idenx.html#contacto">Contacto</a>
+          <a href="login.html">Iniciar sesion</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Zonas</h4>
+        <nav class="footer__links">
+          <a href="properties.html?zona=centro">Centro, Bogotá</a>
+          <a href="properties.html?zona=chapinero">Chapinero</a>
+          <a href="properties.html?zona=santafe">Santa Fe</a>
+          <a href="properties.html?zona=cali">Granada, Cali</a>
+          <a href="properties.html?zona=elpoblado">El Poblado</a>
+          <a href="properties.html?zona=envigado">Envigado</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10.5c0 5.5-8 11.5-8 11.5S4 16 4 10.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.3" r="2.8"/></svg>
+            <span>Carrera 11 # 93-45<br>Bogotá, Colombia</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span>+57 601 745 8800</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg>
+            <span>hola@casacielo.com.co</span>
+          </li>
+        </ul>
+        <form class="footer__newsletter" data-newsletter>
+          <label class="sr-only" for="news">Tu email</label>
+          <input class="input" type="email" id="news" name="news" placeholder="Tu email" required>
+          <button class="btn btn--accent" type="submit" aria-label="Suscribirse">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Casa &amp; Cielo Inmobiliaria. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces legales">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Mapa web</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573001111222" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.4-.2-2.4.6.6-2.3-.2-.4A8 8 0 0 1 12 4zm-3.4 4.2c-.2 0-.5.1-.7.4-.3.3-.9 1-.9 2.2s.9 2.5 1 2.7c.2.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.6-.1 1.6-.7 1.8-1.3.2-.7.2-1.2.2-1.4l-.6-.3s-1.4-.7-1.6-.8c-.2 0-.4-.1-.6.2l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></svg>
+</a>
+
+<script src="../js/data.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
